@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module vista</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>vista</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Casus%5Cdesktop%5Cdepurando_entrega_final%5Centrega_intermedia_intermedio%5Cvista.py">c:\users\asus\desktop\depurando_entrega_final\entrega_intermedia_intermedio\vista.py</a></font></td></tr></table>
+    <p><tt>#&nbsp;En&nbsp;este&nbsp;modulo&nbsp;se&nbsp;configura&nbsp;la&nbsp;interfaz&nbsp;de&nbsp;la&nbsp;app.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="tkinter.messagebox.html">tkinter.messagebox</a><br>
+<a href="modelo.html">modelo</a><br>
+</td><td width="25%" valign=top><a href="re.html">re</a><br>
+<a href="tkinter.html">tkinter</a><br>
+</td><td width="25%" valign=top><a href="tkinter.ttk.html">tkinter.ttk</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="vista.html#VistaApp">VistaApp</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="VistaApp">class <strong>VistaApp</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#VistaApp">VistaApp</a>(ventana)<br>
+&nbsp;<br>
+Clase&nbsp;destinada&nbsp;a&nbsp;la&nbsp;creacion&nbsp;de&nbsp;la&nbsp;interfaz&nbsp;grafica&nbsp;de&nbsp;la&nbsp;aplicacion.&nbsp;Posee&nbsp;multiples&nbsp;atributos&nbsp;destinados<br>
+a&nbsp;la&nbsp;construccion&nbsp;de&nbsp;la&nbsp;interfaz,&nbsp;y&nbsp;varios&nbsp;metodos&nbsp;que&nbsp;permiten&nbsp;llevar&nbsp;adelante&nbsp;las&nbsp;operaciones&nbsp;ABMC.&nbsp;<br>
+Se&nbsp;comunica&nbsp;con&nbsp;el&nbsp;modulo&nbsp;"modelo"&nbsp;para&nbsp;realizar&nbsp;querys&nbsp;a&nbsp;la&nbsp;base&nbsp;de&nbsp;datos.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="VistaApp-__init__"><strong>__init__</strong></a>(self, ventana)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="VistaApp-actualizar_tree"><strong>actualizar_tree</strong></a>(self)</dt><dd><tt>Metodo&nbsp;que&nbsp;borra&nbsp;cualquier&nbsp;registro&nbsp;que&nbsp;se&nbsp;encuentre&nbsp;a&nbsp;la&nbsp;vista&nbsp;en&nbsp;el&nbsp;treeview&nbsp;del&nbsp;objeto.<br>
+Sera&nbsp;utilizado&nbsp;para&nbsp;"limpiar"&nbsp;registros&nbsp;de&nbsp;modo&nbsp;que&nbsp;no&nbsp;se&nbsp;muestren&nbsp;mas&nbsp;de&nbsp;una&nbsp;vez&nbsp;al&nbsp;listar&nbsp;registros.</tt></dd></dl>
+
+<dl><dt><a name="VistaApp-borrar_entry"><strong>borrar_entry</strong></a>(self, entry)</dt><dd><tt>Metodo&nbsp;utilizado&nbsp;para&nbsp;borrar&nbsp;lo&nbsp;que&nbsp;escriba&nbsp;el&nbsp;usuario&nbsp;en&nbsp;los&nbsp;entrys&nbsp;al&nbsp;realizar&nbsp;una&nbsp;funcionalidad.<br>
+Recibe&nbsp;el&nbsp;entry&nbsp;del&nbsp;que&nbsp;se&nbsp;toman&nbsp;datos&nbsp;y&nbsp;procede&nbsp;a&nbsp;dejarlo&nbsp;vacio.</tt></dd></dl>
+
+<dl><dt><a name="VistaApp-eliminar_todos"><strong>eliminar_todos</strong></a>(self)</dt><dd><tt>Metodo&nbsp;utilizado&nbsp;para&nbsp;eliminar&nbsp;todos&nbsp;los&nbsp;registros&nbsp;de&nbsp;la&nbsp;tabla.<br>
+Utiliza&nbsp;objeto&nbsp;de&nbsp;la&nbsp;clase&nbsp;Abmc&nbsp;para&nbsp;llevar&nbsp;adelante&nbsp;la&nbsp;query.</tt></dd></dl>
+
+<dl><dt><a name="VistaApp-para_agregar"><strong>para_agregar</strong></a>(self, nombre, apellido)</dt><dd><tt>Metodo&nbsp;para&nbsp;agregar&nbsp;clientes&nbsp;dentro&nbsp;de&nbsp;la&nbsp;base&nbsp;de&nbsp;datos.&nbsp;Se&nbsp;ejecuta&nbsp;al&nbsp;presionar&nbsp;el&nbsp;boton&nbsp;que&nbsp;le&nbsp;corresponde.<br>
+Recibe&nbsp;dos&nbsp;strs&nbsp;que&nbsp;deben&nbsp;coincidir&nbsp;con&nbsp;el&nbsp;patron&nbsp;de&nbsp;regex&nbsp;definido&nbsp;para&nbsp;luego&nbsp;agregar&nbsp;un&nbsp;registro&nbsp;a&nbsp;la&nbsp;tabla.<br>
+Utiliza&nbsp;un&nbsp;objeto&nbsp;de&nbsp;la&nbsp;clase&nbsp;Abmc,&nbsp;el&nbsp;cual&nbsp;toma&nbsp;los&nbsp;parametros&nbsp;necesarios&nbsp;(nombre&nbsp;y&nbsp;apellido)&nbsp;para&nbsp;agregar&nbsp;un&nbsp;registro.</tt></dd></dl>
+
+<dl><dt><a name="VistaApp-para_borrar"><strong>para_borrar</strong></a>(self, parametro)</dt><dd><tt>Metodo&nbsp;destinado&nbsp;a&nbsp;borrar&nbsp;registros&nbsp;de&nbsp;la&nbsp;base&nbsp;de&nbsp;datos.&nbsp;Se&nbsp;ejecuta&nbsp;al&nbsp;presionar&nbsp;en&nbsp;el&nbsp;boton&nbsp;que&nbsp;le&nbsp;corresponde.<br>
+Utiliza&nbsp;un&nbsp;objeto&nbsp;de&nbsp;la&nbsp;clase&nbsp;Abmc,&nbsp;el&nbsp;cual&nbsp;toma&nbsp;el&nbsp;parametro&nbsp;necesario&nbsp;(un&nbsp;id)&nbsp;para&nbsp;borrar&nbsp;un&nbsp;registro.<br>
+Finalmente&nbsp;utiliza&nbsp;el&nbsp;metodo&nbsp;borrar_entry&nbsp;para&nbsp;limpiar.</tt></dd></dl>
+
+<dl><dt><a name="VistaApp-para_listar"><strong>para_listar</strong></a>(self)</dt><dd><tt>Metodo&nbsp;destinado&nbsp;a&nbsp;listar&nbsp;registros&nbsp;de&nbsp;la&nbsp;tabla.&nbsp;<br>
+Usa&nbsp;el&nbsp;metodo&nbsp;actualizar_tree&nbsp;para&nbsp;limpiar&nbsp;los&nbsp;registros&nbsp;del&nbsp;treeview&nbsp;y&nbsp;luego&nbsp;utiliza&nbsp;un&nbsp;objeto&nbsp;de&nbsp;la&nbsp;clase&nbsp;Abmc<br>
+para&nbsp;proceder&nbsp;a&nbsp;listar&nbsp;los&nbsp;registros.</tt></dd></dl>
+
+<dl><dt><a name="VistaApp-para_modificar"><strong>para_modificar</strong></a>(self, id, nombre, apellido)</dt><dd><tt>Metodo&nbsp;destinado&nbsp;a&nbsp;modificar&nbsp;registros&nbsp;de&nbsp;la&nbsp;base&nbsp;de&nbsp;datos.&nbsp;Se&nbsp;ejecuta&nbsp;al&nbsp;presionar&nbsp;el&nbsp;boton&nbsp;que&nbsp;le&nbsp;corresponde.<br>
+Recibe,&nbsp;a&nbsp;lo&nbsp;sumo,&nbsp;tres&nbsp;parametros.&nbsp;Estos&nbsp;deben&nbsp;coincidir&nbsp;con&nbsp;su&nbsp;respectiva&nbsp;regex.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>BOTH</strong> = 'both'<br>
+<strong>CENTER</strong> = 'center'<br>
+<strong>NO</strong> = 0<br>
+<strong>W</strong> = 'w'</td></tr></table>
+</body></html>
